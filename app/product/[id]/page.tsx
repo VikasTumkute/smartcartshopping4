@@ -6,8 +6,8 @@ import Link from 'next/link';
 const products = [
   { id: '1', name: 'Headphones', price: '5000', image: '/image/head12.jpg', description: 'High-quality wireless headphones.' },
   { id: '2', name: 'Radio', price: '1500', image: '/image/radio12.jpg', description: 'Vintage-style radio with modern sound quality.' },
-  { id: '3', name: 'child dress', price: '1200', image: '/image/chi12.webp', description: 'Effortlessly cook your favorite meals with this high-performance fryer. With a sleek design and advanced technology, it ensures crispy, delicious results every time.' },
-  { id: '4', name: 'Hair Dryer', price: '1200', image: '/image/ele 4.jpeg', description: 'Powerful hair dryer with multiple settings.' },
+  { id: '3', name: 'Child Dress', price: '1200', image: '/image/chi12.webp', description: 'Effortlessly cook your favorite meals with this high-performance fryer.' },
+  { id: '4', name: 'Hair Dryer', price: '1200', image: '/image/ele4.jpeg', description: 'Powerful hair dryer with multiple settings.' },
   { id: '5', name: 'Laptop', price: '120000', image: '/image/laptop12.jpg', description: 'Lightweight laptop with long battery life.' },
   { id: '6', name: 'Camera', price: '12000', image: '/image/camera12.jpg', description: 'DSLR camera for professional photography.' },
 ];
@@ -21,12 +21,12 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
   const handleAddToCart = () => {
     console.log(`Added ${product.name} to cart`);
-    // Here you can integrate with a cart state or a global store like Redux
+    // Implement cart functionality here
   };
 
   const handleBuyNow = () => {
     console.log(`Proceeding to buy ${product.name}`);
-    // Redirect to checkout or purchase page
+    // Implement buy functionality here
   };
 
   return (
@@ -42,7 +42,6 @@ export default function ProductPage({ params }: { params: { id: string } }) {
         <button onClick={handleBuyNow} className="buy-button">Buy Now</button>
         <button onClick={handleAddToCart} className="cart-button">Add to Cart</button>
       </div>
-      
       <style jsx>{`
         .product-page {
           max-width: 600px;

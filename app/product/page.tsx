@@ -33,25 +33,25 @@ export default function ProductPage() {
     },
     {
       title: 'Jeans',
-      description: 'Warm and cozy hoodies',
+      description: 'Durable and stylish jeans',
       price: 1800,
       imageUrl: '/image/jeans517.webp',
     },
     {
       title: 'Gifts',
-      description: 'Warm and cozy hoodies',
+      description: 'Unique and thoughtful gifts',
       price: 1500,
       imageUrl: '/image/gifts123.png',
     },
     {
       title: 'Child Dress',
-      description: 'Warm and cozy hoodies',
+      description: 'Adorable and comfortable dresses for children',
       price: 1500,
       imageUrl: '/image/chi12.webp',
     },
     {
       title: 'Shoes',
-      description: 'Warm and cozy hoodies',
+      description: 'Stylish and durable shoes',
       price: 500,
       imageUrl: '/image/shoes112.jpg',
     },
@@ -91,7 +91,7 @@ export default function ProductPage() {
       <h1>Our Products</h1>
       <style jsx>{`
         .productPage {
-          background-image: url('/image/pback123.jpg'); /* Your background image */
+          background-image: url('/image/pback123.jpg');
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat;
